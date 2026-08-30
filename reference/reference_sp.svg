@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="760" viewBox="0 0 375 760" role="img" aria-labelledby="t">
+  <title id="t">昼のギルド SP版ヒーロー完成見本</title>
+  <image href="../assets/bg_sp.webp" width="375" height="760" preserveAspectRatio="xMidYMid slice"/><rect width="375" height="760" fill="url(#shade)"/><defs><linearGradient id="shade" x2="0" y2="1"><stop stop-color="#fff" stop-opacity=".38"/><stop offset=".52" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#214c60" stop-opacity=".25"/></linearGradient></defs>
+  <image href="../assets/logo.svg" x="62.5" y="8" width="250" height="72"/><image href="../assets/campaign_title.svg" x="10" y="72" width="355" height="100"/>
+  <text x="187.5" y="192" text-anchor="middle" font-family="Hiragino Sans,Yu Gothic,sans-serif" font-size="15" font-weight="900" fill="#285981" stroke="#fff" stroke-width="4" paint-order="stroke">今日から、キミもギルドの仲間。</text>
+  <rect x="66" y="204" width="243" height="28" fill="#fff" fill-opacity=".92" stroke="#54b6c0"/><text x="187.5" y="223" text-anchor="middle" font-family="monospace" font-size="9" font-weight="700" fill="#315c81">2026.10.10 12:00 — 11.1 23:59</text>
+  <image href="../assets/decoration_sparkles.svg" x="-10" y="165" width="100" height="65"/><image href="../assets/decoration_sparkles.svg" x="285" y="185" width="100" height="65"/>
+  <image href="../assets/character_pyro.webp" x="-6" y="337" width="96" height="96"/><image href="../assets/character_sumi.webp" x="271" y="358" width="98" height="98"/><image href="../assets/character_minto.webp" x="12" y="467" width="105" height="105"/><image href="../assets/character_luno.webp" x="100" y="443" width="175" height="175"/><image href="../assets/character_bit.webp" x="251" y="468" width="116" height="116"/>
+  <image href="../assets/btn_entry.svg" x="17.5" y="666" width="340" height="74"/>
+</svg>

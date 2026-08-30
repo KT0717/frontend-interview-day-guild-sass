@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 96" role="img" aria-labelledby="t">
+  <title id="t">冒険の準備をする</title>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff8d61"/><stop offset="1" stop-color="#f05d8c"/></linearGradient></defs>
+  <path d="M20 8h400v9h10v62h-10v9H20v-9H10V17h10z" fill="url(#g)" stroke="#fff" stroke-width="6"/>
+  <path d="M26 17h388v62H26z" fill="none" stroke="#ffdca2" stroke-width="3"/>
+  <text x="210" y="61" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-weight="900" font-size="25" fill="#fff">冒険の準備をする</text>
+  <path d="m382 37 17 11-17 11" fill="none" stroke="#fff7b8" stroke-width="6"/>
+</svg>
