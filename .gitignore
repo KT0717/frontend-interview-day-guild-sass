@@ -1,0 +1,6 @@
+.astro/
+dist/
+node_modules/
+pnpm-lock.yaml
+pnpm-workspace.yaml
+src/.DS_Store
