@@ -14,7 +14,42 @@ import "../styles/hero.scss";
   <body>
     <main>
       <section class="hero">
-        <!-- この中にヒーロー部分を実装してください -->
+        <img class="hero__sparkles hero__sparkles--left" src="/assets/decoration_sparkles.svg" alt="" />
+        <img class="hero__sparkles hero__sparkles--right" src="/assets/decoration_sparkles.svg" alt="" />
+        <img class="hero__sparkles hero__sparkles--center" src="/assets/decoration_sparkles.svg" alt="" />
+
+        <div class="hero__header">
+          <img class="hero__logo" src="/assets/logo.svg" alt="NOVA GUILD" />
+
+          <h1 class="hero__title">
+            <img src="/assets/campaign_title.svg" alt="SUNLIT GUILD FESTA — Welcome, new adventurer!" />
+          </h1>
+
+          <p class="hero__message">今日から、キミもギルドの仲間。</p>
+
+          <p class="hero__period">
+            <span class="hero__period-label">開催期間</span>
+            <time datetime="2026-10-10T12:00">2026.10.10&nbsp; 12:00</time>
+            <span aria-hidden="true">−</span>
+            <time datetime="2026-11-01T23:59">11.1&nbsp; 23:59</time>
+          </p>
+        </div>
+
+        <div class="hero__party" aria-hidden="true">
+          <img class="hero__character hero__character--pyro" src="/assets/character_pyro.webp" alt="" />
+          <img class="hero__character hero__character--minto" src="/assets/character_minto.webp" alt="" />
+          <img class="hero__character hero__character--rocko" src="/assets/character_rocko.webp" alt="" />
+          <img class="hero__character hero__character--luno" src="/assets/character_luno.webp" alt="" />
+          <img class="hero__character hero__character--sumi" src="/assets/character_sumi.webp" alt="" />
+          <img class="hero__character hero__character--bit" src="/assets/character_bit.webp" alt="" />
+        </div>
+
+        <div class="hero__entry">
+          <button class="hero__entry-button" type="button" aria-label="冒険の準備をする">
+            <img src="/assets/btn_entry.svg" alt="" />
+          </button>
+          <p class="hero__reward">エントリーで限定アイテム「ひだまりギルド章」をプレゼント</p>
+        </div>
       </section>
     </main>
   </body>
