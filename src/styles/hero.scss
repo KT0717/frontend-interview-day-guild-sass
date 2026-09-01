@@ -83,47 +83,96 @@ $breakpoint-sp: 768px;
 }
 
 .hero__character {
+  --idle-distance: 8px;
+  --idle-tilt: 1deg;
+
   position: absolute;
   height: auto;
+  transform-origin: center bottom;
+  animation: hero-character-idle 2.8s ease-in-out infinite;
   filter: drop-shadow(0 5px 2px rgb(23 42 48 / 24%));
+  will-change: translate, rotate;
 }
 
 .hero__character--pyro {
+  --idle-distance: 10px;
+  --idle-tilt: -2deg;
+
   bottom: 148px;
   left: 5.55%;
   width: clamp(125px, 10.5vw, 152px);
+  animation-duration: 2.2s;
+  animation-delay: -0.4s;
 }
 
 .hero__character--minto {
+  --idle-distance: 6px;
+  --idle-tilt: 1.5deg;
+
   bottom: 126px;
   left: 15.28%;
   width: clamp(140px, 11.2vw, 162px);
+  animation-duration: 2.9s;
+  animation-delay: -1.3s;
 }
 
 .hero__character--rocko {
+  --idle-distance: 5px;
+  --idle-tilt: -1deg;
+
   bottom: 146px;
   left: 27.78%;
   width: clamp(135px, 10.5vw, 152px);
+  animation-duration: 3.2s;
+  animation-delay: -0.8s;
 }
 
 .hero__character--luno {
+  --idle-distance: 8px;
+  --idle-tilt: 1deg;
+
   bottom: 123px;
   left: 50%;
   width: clamp(184px, 14.4vw, 207px);
   transform: translateX(-50%);
+  animation-duration: 2.7s;
+  animation-delay: -1.8s;
   z-index: 2;
 }
 
 .hero__character--sumi {
+  --idle-distance: 12px;
+  --idle-tilt: -1.5deg;
+
   right: 26.04%;
   bottom: 136px;
   width: clamp(142px, 11.2vw, 162px);
+  animation-duration: 3.4s;
+  animation-delay: -2.1s;
 }
 
 .hero__character--bit {
+  --idle-distance: 9px;
+  --idle-tilt: 1.5deg;
+
   right: 13.19%;
   bottom: 135px;
   width: clamp(142px, 11.2vw, 162px);
+  animation-duration: 2.4s;
+  animation-delay: -1s;
+}
+
+@keyframes hero-character-idle {
+  0%,
+  100% {
+    translate: 0 0;
+    rotate: 0deg;
+  }
+
+  50% {
+    translate: 0 calc(var(--idle-distance) * -1);
+    rotate: var(--idle-tilt);
+  }
 }
 
 .hero__entry {
@@ -322,6 +371,11 @@ $breakpoint-sp: 768px;
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .hero__character {
+    animation: none;
+    will-change: auto;
+  }
+
   .hero__entry-button {
     transition: none;
   }
